@@ -18,3 +18,19 @@ Webpack - build tool
 - if we put "default" to a class/function - it can be exported like DEFAULT_ITEM 
 - and if we dont put "default" to class/function, then it can be exported like { EXPORTED_ITEMS }
 	Import DEFAULT_ITEM, { EXPORTED_ITEMS } from MODULE;
+	
+	
+#### createElement
+- Syntax: createElement(component, properties, children);
+- Component
+	-	createElement('div', null, 'hello');
+	- 	div is a react component here
+- Children
+	-	createElement('div', null, createElement('span', null, 'hello'););
+- Properties
+	-	createElement('div', null, createElement('span', {{style : color : 'red' }}, 'hello'););
+	
+
+#### State
+- We can keep state in the components
+- State is useful if we have data that keeps changing. Just like object in Java
