@@ -21,7 +21,7 @@ Webpack - build tool
 	
 	
 #### createElement
-- Syntax: createElement(component, properties, children);
+- Syntax:  
 - Component
 	-	createElement('div', null, 'hello');
 	- 	div is a react component here
@@ -34,3 +34,10 @@ Webpack - build tool
 #### State
 - We can keep state in the components
 - State is useful if we have data that keeps changing. Just like object in Java
+- State is internal to an object. It is kept inside the object. It changes with time and behaviour
+
+
+#### Properties
+- we will use if we want to send configuration data
+- Like the color, size, units, currency
+- Properties should be treated as immutable

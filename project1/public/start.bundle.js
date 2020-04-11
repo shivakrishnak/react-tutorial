@@ -230,6 +230,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./appproperties.js":
+/*!**************************!*\
+  !*** ./appproperties.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return AppProp; });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nclass AppProp extends react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"] {\r\n    constructor(props){\r\n        super(props);\r\n        const size = props.size;\r\n        this.state = {\r\n            values: Array.from(Array(size),(ignore, index) => index +1)\r\n            \r\n        };\r\n    }\r\n\r\n\r\n    render(){\r\n        const numbers = this.state.values.map(number => \r\n             Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])(\"li\", {key: number.toString()}, number));\r\n        return Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])('div', null, Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])('h2',null,'Numbers'),\r\n        Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])('ul', null, numbers));\r\n    }\r\n}\n\n//# sourceURL=webpack:///./appproperties.js?");
+
+/***/ }),
+
 /***/ "./start.js":
 /*!******************!*\
   !*** ./start.js ***!
@@ -238,7 +250,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"../node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app */ \"./app.js\");\n\r\n\r\n\r\n\r\n\r\n//ReactDOM.render(WHAT, WHERE);\r\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])(_app__WEBPACK_IMPORTED_MODULE_2__[\"App\"], null,null), document.getElementById('contents'));\r\n\n\n//# sourceURL=webpack:///./start.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"../node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"../node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app */ \"./app.js\");\n/* harmony import */ var _appproperties__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./appproperties */ \"./appproperties.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n//ReactDOM.render(WHAT, WHERE);\r\n//ReactDOM.render(createElement(App, null, null), document.getElementById('contents'));\r\n\r\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(Object(react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"])(_appproperties__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {size: 9}, null), document.getElementById('contents'));\n\n//# sourceURL=webpack:///./start.js?");
 
 /***/ })
 
