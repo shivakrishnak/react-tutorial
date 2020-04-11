@@ -5,6 +5,9 @@
 Babel - compiler
 Webpack - build tool
 
+> Put HTML into Javascript = React
+> Put Javascript into HTML = Angular
+
 
 ##### Component
 - a resuable piece of code - to render or display
